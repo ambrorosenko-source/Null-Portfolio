@@ -235,6 +235,13 @@
             width: 100%;
         }
 
+           .gallery2 {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 25px;
+            width: 100%;
+        }
+
         .work-card {
             background: #9b87b5;
             border-radius: 2rem;
@@ -248,11 +255,20 @@
             display: block;
         }
 
-        .gallery2 {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 25px;
+           .work-card1 {
+            background: #9b87b5;
+            border-radius: 2rem;
+            overflow: hidden;
+            max-width: 1080px;
             width: 100%;
+            height: 530px;
+            margin: 0 auto;
+            box-shadow: 0 12px 26px -12px rgba(90, 50, 120, 0.15);
+            transition: all 0.3s ease;
+            border: 1px solid #5e497a;
+            margin-bottom: 30px;
+            position: relative;
+            isolation: isolate;
         }
 
         .work-card2 {
@@ -268,12 +284,13 @@
             display: block;
         }
 
-        .work-card3 {
+          .work-card3 {
             background: #9b87b5;
             border-radius: 2rem;
             overflow: hidden;
-            max-width: 1080px;
+            height: 450px;
             width: 100%;
+            aspect-ratio: 8.5 / 21;
             margin: 0 auto;
             box-shadow: 0 12px 26px -12px rgba(90, 50, 120, 0.15);
             transition: all 0.3s ease;
@@ -281,6 +298,19 @@
             margin-bottom: 30px;
             position: relative;
             isolation: isolate;
+        }
+        
+         .work-card4 {
+            background: #9b87b5;
+            border-radius: 2rem;
+            overflow: hidden;
+            width: 430px;
+            height: 530px;
+            margin: 0 auto;
+            box-shadow: 0 12px 26px -12px rgba(90, 50, 120, 0.15);
+            transition: all 0.3s ease;
+            border: 1px solid #9b87b5;
+            display: block;
         }
 
         .work-card:hover {
@@ -327,6 +357,7 @@
         .work-info {
             padding: 1.2rem 1rem 1.5rem;
         }
+        
 
         .work-info h3 {
             font-size: 1.3rem;
@@ -623,8 +654,9 @@
             <div class="section-title">Обо мне</div>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>Я дизайнер-иллюстратор, создаю иллюстрации, концепты и анимации. Мой стиль — мягкие линии, приятная и нежная цветовая гамма.</p>
-                    <p>Верю, что иллюстрация позволяет зрителю коснуться других миров. Работала с инди-проектами, творческими сообществами. Не смотря на мой стиль, мои работы не всегда милые и нежные. Люблю разнообразие.</p>
+                    <p>Я дизайнер-иллюстратор, создаю иллюстрации, концепты и анимации. Этот сайт был создан мной для ознакомления с мои творчеством и моими проектами.</p>
+                    <p>Верю, что иллюстрация позволяет зрителю коснуться других миров. Работала с инди-проектами, творческими сообществами. Не смотря на мой стиль, мои работы не всегда милые и нежные. Люблю разнообразие, часто рисую по чувству. </p>
+                    <p>Я учусь в СПбГУПТД на дизайнера. Мечтаю дарить людям эмоции своим творчеством. На данный момент вхожу в состав проекта "Вечный Лес". Наша команда создает собственный мир, где обитают существа разных видов, возрастов, а также интересов. </p>
                     <div class="about-sign">— свободный художник и визуальный мыслитель</div>
                 </div>
             </div>
@@ -636,13 +668,35 @@
         <div class="section">
             <div class="section-header-row">
                 <div class="section-title">Мои работы</div>
+                 <p>Мои работы в хронологическом порядке</p>
                 <div class="scroll-arrows">
                     <button class="scroll-arrow" onclick="scrollGallery('works-gallery', -350)">←</button>
                     <button class="scroll-arrow" onclick="scrollGallery('works-gallery', 350)">→</button>
-                </div>
+                </div> 
             </div>
+            
             <div class="gallery-wrapper" id="works-gallery">
                 <div class="gallery">
+
+                    <div class="work-card4">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация11.jpg" alt="Кираз">
+                        </div>
+                        <div class="work-info">
+                            <h3>Кираз</h3>
+                            <p>Скетч персонажа Terra, digital, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card4">
+                        <div class="work-img img-frame">
+                            <img src="images/ава.jpg" alt="Нулл00">
+                        </div>
+                        <div class="work-info">
+                            <h3>Null00</h3>
+                            <p>digital, 2026</p>
+                        </div>
+                    </div>
 
                     <div class="work-card2">
                         <div class="work-img img-frame">
@@ -650,6 +704,26 @@
                         </div>
                         <div class="work-info">
                             <h3>Гелия и Арвалос</h3>
+                            <p>digital, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация12.jpg" alt="Нуллиана творец">
+                        </div>
+                        <div class="work-info">
+                            <h3>Творец своей истории</h3>
+                            <p>digital, 2026</p>
+                        </div>
+                    </div>
+
+                     <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация10.jpg" alt="Шахматы">
+                        </div>
+                        <div class="work-info">
+                            <h3>Шах и мат</h3>
                             <p>digital, 2026</p>
                         </div>
                     </div>
@@ -666,10 +740,30 @@
 
                     <div class="work-card">
                         <div class="work-img img-frame">
+                            <img src="images/иллюстрация25.jpg" alt="Сэм Грачевский">
+                        </div>
+                        <div class="work-info">
+                            <h3>С днем рождения</h3>
+                            <p>Подарок для Terra, digital, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-img img-frame">
                             <img src="images/иллюстрация6.jpg" alt="Нуллиана и её жизненный путь">
                         </div>
                         <div class="work-info">
                             <h3>Нуллиана и её жизненный путь</h3>
+                            <p>digital, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card2">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация14.jpg" alt="Нулл и альтер-Нулл">
+                        </div>
+                        <div class="work-info">
+                            <h3>Нулл и альтер-Нулл</h3>
                             <p>digital, 2026</p>
                         </div>
                     </div>
@@ -680,7 +774,7 @@
                         </div>
                         <div class="work-info">
                             <h3>Тесса</h3>
-                            <p>Иллюстрация в подарок по вселенной "Гарри Поттер", digital, 2026</p>
+                            <p>Иллюстрация в подарок по вселенной "Гарри Поттер" Terra, digital, 2026</p>
                         </div>
                     </div>
 
@@ -694,6 +788,16 @@
                         </div>
                     </div>
 
+                    <div class="work-card2">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация15.jpg" alt="Рина">
+                        </div>
+                        <div class="work-info">
+                            <h3>Легенда о Рине</h3>
+                            <p>Арт на конкурс Рины, digital, 2026</p>
+                        </div>
+                    </div>
+
                     <div class="work-card">
                         <div class="work-img img-frame">
                             <img src="images/иллюстрация2.jpg" alt="Фафнир в поле">
@@ -704,13 +808,53 @@
                         </div>
                     </div>
 
+                    <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация16.jpg" alt="Фафнир в поле">
+                        </div>
+                        <div class="work-info">
+                            <h3>Ицуки</h3>
+                            <p>Приз за конкурс, digital, 2026</p>
+                        </div>
+                    </div>
+
                     <div class="work-card2">
                         <div class="work-img img-frame">
                             <img src="images/иллюстрация7.jpg" alt="Темная версия Арвалоса">
                         </div>
                         <div class="work-info">
                             <h3>Темная версия Арвалоса</h3>
-                            <p>digital, 2026</p>
+                            <p>Ивент в проекте "Вечный Лес", digital, 2026</p>
+                        </div>
+                    </div>
+
+                      <div class="work-card2">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация17.jpg" alt="Undersnow">
+                        </div>
+                        <div class="work-info">
+                            <h3>Undersnow</h3>
+                            <p>Календарь для фестиваля "Undersnow", digital, 2025</p>
+                        </div>
+                    </div>
+
+                     <div class="work-card2">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация18.jpg" alt="Ивент Кувы">
+                        </div>
+                        <div class="work-info">
+                            <h3>Нулл</h3>
+                            <p>digital, 2025</p>
+                        </div>
+                    </div>
+
+                      <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация19.jpg" alt="Ивент Кувы">
+                        </div>
+                        <div class="work-info">
+                            <h3>Ивент от Кувы</h3>
+                            <p>Работа созданная в рамках ивента от Кувы в "Вечном Лесу", digital, 2025</p>
                         </div>
                     </div>
 
@@ -730,14 +874,65 @@
                         </div>
                         <div class="work-info">
                             <h3>Наутиз</h3>
-                            <p>Работа в ивенте "Хуманизация Рун", digital иллюстрация, 2025</p>
+                            <p>Работа в ивенте "Хуманизация Рун", digital, 2025</p>
                         </div>
                     </div>
+
+                    <div class="work-card4">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация20.jpg" alt="Перепутье">
+                        </div>
+                           <div class="work-info">
+                            <h3>Перепутье</h3>
+                            <p>Арт для фестиваля "Перепутье", digital, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card4">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация21.jpg" alt="Перепутье">
+                        </div>
+                        <div class="work-info">
+                            <h3>Перепутье</h3>
+                            <p>Арт для фестиваля "Перепутье", digital, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card2">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация22.jpg" alt="Перепутье">
+                        </div>
+                        <div class="work-info">
+                            <h3>Перепутье</h3>
+                            <p>Свопка для фестиваля "Перепутье", digital, 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация23.jpg" alt="Перепутье">
+                        </div>
+                        <div class="work-info">
+                            <h3>Перепутье</h3>
+                            <p>Свопка для фестиваля "Перепутье", digital, 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/иллюстрация24.jpg" alt="Перепутье">
+                        </div>
+                        <div class="work-info">
+                            <h3>Перепутье</h3>
+                            <p>Свопка для фестиваля "Перепутье", digital, 2025</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        <!-- КОНЦЕПТЫ ПЕРСОНАЖЕЙ -->
+     <!-- КОНЦЕПТЫ ПЕРСОНАЖЕЙ -->
         <div class="section">
             <div class="section-header-row">
                 <div class="section-title">Концепты персонажей</div>
@@ -748,13 +943,13 @@
             </div>
             <div class="gallery-wrapper" id="concepts-gallery">
                 <div class="gallery2">
-                    <div class="work-card2">
+                    <div class="work-card1">
                         <div class="work-img img-frame">
                             <img src="images/дизайн_персонажа.jpg" alt="Арвалос">
                         </div>
                         <div class="work-info">
                             <h3>Арвалос</h3>
-                            <p>Пример концепта персонажа проекта "Вечный лес", digital, 2026</p>
+                            <p>Концепт персонажа по проекту "Вечный лес", digital, 2026</p>
                         </div>
                     </div>
                     <div class="work-card2">
@@ -763,7 +958,7 @@
                         </div>
                         <div class="work-info">
                             <h3>Смик</h3>
-                            <p>Пример концепта персонажа по мультсериалу "С приветом по планетам", digital, 2026</p>
+                            <p>Концепт персонажа по мультсериалу "С приветом по планетам", digital, 2026</p>
                         </div>
                     </div>
                     <div class="work-card2">
@@ -772,7 +967,7 @@
                         </div>
                         <div class="work-info">
                             <h3>Нулл</h3>
-                            <p>Пример концепта альтер-эго персонажа, digital, 2026</p>
+                            <p>Концепт альтер-эго персонажа, digital, 2026</p>
                         </div>
                     </div>
                     <div class="work-card2">
@@ -781,14 +976,23 @@
                         </div>
                         <div class="work-info">
                             <h3>Оникс</h3>
-                            <p>Пример концепта персонажа, digital, 2026</p>
+                            <p>Концепт персонажа, digital, 2026</p>
+                        </div>
+                    </div>
+                    <div class="work-card4">
+                        <div class="work-img img-frame">
+                            <img src="images/дизайн_персонажа5.jpg" alt="Деметра">
+                        </div>
+                        <div class="work-info">
+                            <h3>Деметра</h3>
+                            <p>Концепт персонажа, digital, 2026</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- АНИМАЦИИ -->
+     <!-- АНИМАЦИИ -->
         <div class="section">
             <div class="section-header-row">
                 <div class="section-title">Примеры анимаций</div>
@@ -799,14 +1003,28 @@
             </div>
             <div class="gallery-wrapper" id="anim-gallery">
                 <div class="gallery2">
+
+                    <div class="work-card3">
+                        <div class="work-vid mp4-frame">
+                            <video id="video_4" autoplay loop muted playsinline>
+                                <source src="images/video_4.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео
+                            </video>
+                            </div>
+                        <div class="work-info">
+                            <h3>Зацикленная заставка на Стрим</h3>
+                            <p>Анимация в After Effects на заказ, digital, 2026</p>
+                        </div>
+                    </div>
+                    
                     
                     <div class="work-card3">
                         <div class="work-vid mp4-frame">
-                            <video id="video1" autoplay loop muted playsinline>
+                            <video id="video2" autoplay loop muted playsinline>
                                 <source src="images/video_2.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает видео
                             </video>
-                            <button class="sound-toggle" onclick="toggleSound('video1', this)" title="Включить звук">🔇</button>
+                            <button class="sound-toggle" onclick="toggleSound('video2', this)" title="Включить звук">🔇</button>
                         </div>
                         <div class="work-info">
                             <h3>Paprika Parade</h3>
@@ -816,11 +1034,11 @@
 
                     <div class="work-card3">
                         <div class="work-vid mp4-frame">
-                            <video id="video2" autoplay loop muted playsinline>
+                            <video id="video1" autoplay loop muted playsinline>
                                 <source src="images/video1.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает видео
                             </video>
-                            <button class="sound-toggle" onclick="toggleSound('video2', this)" title="Включить звук">🔇</button>
+                            <button class="sound-toggle" onclick="toggleSound('video1', this)" title="Включить звук">🔇</button>
                         </div>
                         <div class="work-info">
                             <h3>"Когда мы были на войне"</h3>
@@ -829,6 +1047,64 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- МОИ ПРОЕКТЫ -->
+    <div class="container" id="works">
+        <div class="section">
+            <div class="section-header-row">
+                <div class="section-title">Мои дизайн-проекты</div>
+                <div class="scroll-arrows">
+                    <button class="scroll-arrow" onclick="scrollGallery('project-gallery', -1200)">←</button>
+                    <button class="scroll-arrow" onclick="scrollGallery('project-gallery', 1200)">→</button>
+                </div>
+            </div>
+            <div class="gallery-wrapper" id="project-gallery">
+                <div class="gallery">
+
+                      <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/проект1.jpg" alt="Гелия и Арвалос">
+                        </div>
+                        <div class="work-info">
+                            <h3>Агнец в размышлениях</h3>
+                            <p>Серия плакатов по игре "Культ ягненка", digital, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/проект2.jpg" alt="Гелия и Арвалос">
+                        </div>
+                        <div class="work-info">
+                            <h3>Святой Агнец</h3>
+                            <p>Серия плакатов по игре "Культ ягненка", digital, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/проект3.jpg" alt="Гелия и Арвалос">
+                        </div>
+                        <div class="work-info">
+                            <h3>Великое братство</h3>
+                            <p>Серия плакатов по игре "Культ ягненка", digital, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-img img-frame">
+                            <img src="images/проект4.jpg" alt="Гелия и Арвалос">
+                        </div>
+                        <div class="work-info">
+                            <h3>Тот Кто Ждет</h3>
+                            <p>Серия плакатов по игре "Культ ягненка", digital, 2026</p>
+                        </div>
+                    </div>
+
+                    </div>
             </div>
         </div>
     </div>
@@ -846,6 +1122,7 @@
                 <span class="skill-badge">векторная графика</span>
                 <span class="skill-badge">ibis paint</span>
                 <span class="skill-badge">After Effects</span>
+                <span class="skill-badge">Visual Studio Code</span>
             </div>
             <div style="margin-top: 2rem; background: #f4efdd; border-radius: 32px; padding: 1.2rem;">
                 <p style="font-weight: 500; color:#462e64;">дополнительно: работа в инди-проектах, создание персонажей, дизайн мерча, визуальные концепты. Имеется опыт в создании бренда от концепта и продукции до дизайна сайта и его программирования.</p>
@@ -865,6 +1142,7 @@
                         <a href="https://vk.com/null_katl" target="_blank" rel="noopener" class="social-link">VK</a>
                         <a href="https://www.tumblr.com/nulliana?source=share" target="_blank" rel="noopener" class="social-link">Tumbler</a>
                         <a href="https://x.com/Null_KaTL" target="_blank" rel="noopener" class="social-link">X (Twitter)</a>
+                        <a href="https://t.me/Null_KaTL/1069" target="_blank" rel="noopener" class="social-link">Мой прайс-лист по иллюстрациям (тг)</a>
                     </div>
                 </div>
             </div>
